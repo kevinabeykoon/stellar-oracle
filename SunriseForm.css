@@ -1,0 +1,75 @@
+/* Modal styling */
+.modal-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    /*box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+    color: rgb(95, 21, 21);
+    text-align: center;
+  }
+  
+  .modal-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .wolfram-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-label {
+    font-size: 1.1rem;
+  }
+  
+  .date-input {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-button {
+    padding: 10px;
+    background-color: #af824c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #a27749;
+    transition: 0.2s;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1rem;
+  }
+  
+  .sunrise-data {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .data-pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #333;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.9rem;
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  

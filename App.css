@@ -1,0 +1,23 @@
+/* src/App.css */
+
+/* Set the background image for the whole page */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/public/goddess_picture.jpg'); /* Your background image */
+  background-size: cover;  /* Ensure the background covers the full page */
+  background-position: center;  /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+/* Button image styling */
+.button-image {
+  width: 100px;
+  height: 100px;
+  background-image: url('/public/sun.png'); /* Your button image */
+  background-size: cover;  /* Ensure the button image fills the button */
+  background-position: center;
+  cursor: pointer;
+}
