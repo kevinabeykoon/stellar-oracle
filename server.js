@@ -16,7 +16,7 @@ app.post("/api/gemini", async (req, res) => {
       },
       {
         headers: {
-          "Authorization": `Bearer AIzaSyDNGTZ8FLoSWwPbhn-JDbdcrb7QhBDe6r4`,  // Add your Gemini API key here
+          "Authorization": `Bearer api`,  // Add your Gemini API key here
           "Content-Type": "application/json",
         },
       }
