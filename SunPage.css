@@ -1,0 +1,37 @@
+.sun-page {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    background-image: url('/public/sunbg.png'); /* Full path to background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  z-index: 2;
+    padding-top: 10px; /* Space between the title and the top of the page */
+    box-sizing: border-box; /* Make sure padding doesn't affect total height */
+    position: relative; /* Make the home container a positioning context */
+  }
+
+    /* Styling for the title text */
+.sun-title {
+font-family: 'Poppins', sans-serif; /* Font used for the title */
+font-size: 3rem; /* Large font size */
+font-weight: bold;
+color: white; /* White text */
+text-align: center; /* Center the text */
+margin: 0; /* Remove any default margin */
+padding: 20px; /* Add some padding around the title */
+}
+
+.sun-text {
+  font-size: 1.2rem; /* Size of the text */
+  line-height: 1.6; /* Adjust line spacing for better readability */
+  color: #e1dbdb; /* Dark text color for readability */
+  margin: 15px 0; /* Spacing between paragraphs */
+  text-align: justify; /* Justify text for a clean look */
+  font-family: 'Arial', sans-serif; /* Clean, modern font */
+  letter-spacing: 0.5px; /* Slightly spaced letters */
+}

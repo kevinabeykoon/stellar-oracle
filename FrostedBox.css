@@ -1,0 +1,47 @@
+/* FrostedBox.css */
+
+/* Frosted glass box */
+.frosted-box {
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center horizontally */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for frosted box */
+.frosted-box:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Title for frosted box */
+.frosted-box-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0; /* Align title to the top */
+  margin-bottom: 40px; /* Space between title and icon */
+  color: var(--text-color, white); /* Use CSS variable for text color, default to white */
+}
+
+/* Icon inside frosted box */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover; /* Maintain aspect ratio */
+}

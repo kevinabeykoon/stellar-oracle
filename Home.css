@@ -1,0 +1,139 @@
+/* src/components/Home.css */
+
+/* Style for the Home page layout */
+.home {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100vh; /* Full viewport height */
+    background-image: url('/public/goddess_picture.jpg'); /* Full path to background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+    padding-top: 10px; /* Space between the title and the top of the page */
+    box-sizing: border-box; /* Make sure padding doesn't affect total height */
+    position: relative; /* Make the home container a positioning context */
+  }
+  
+  /* Styling for the title text */
+  .home-title {
+    font-family: 'Poppins', sans-serif; /* Font used for the title */
+    font-size: 2.9rem; /* Large font size */
+    font-weight: bold;
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove any default margin */
+    padding: 500px; /* Add some padding around the title */
+  }
+  
+  /* Styling for the button image */
+  .button-sun {
+    width: 100px;
+    height: 100px;
+    background-image: url('/public/sun.png'); /* Full path to the button image */
+    background-size: cover; /* Make sure the image fully covers the div */
+    background-position: center;
+    cursor: pointer; /* Make the div look clickable */
+    position: absolute; /* Positioning relative to the parent container */
+    left: 50%; /* Position the button at the middle horizontally */
+    top: 50%; /* Position the button at the middle vertically */
+    transform: translate(-50%, -50%); /* Center the button at the middle */
+    margin-left: -23%; /* Offset the button 5% left from the center horizontally */
+    margin-top: -8%; /* Offset the button 10% lower from the center vertically */
+    transform: scale(1.7);
+    transition: transform 2s ease;
+  }
+
+  .button-sun:hover {
+    
+    transform: rotate(180deg) scale(2.3);
+    filter: drop-shadow(0 0 1px rgba(255, 255, 0, 1));
+  }
+
+  
+
+    /* Styling for the button image */
+    .button-moon {
+        width: 120px;
+        height: 150px;
+        background-image: url('/public/moon.png'); /* Full path to the button image */
+        background-size: cover; /* Make sure the image fully covers the div */
+        background-position: center;
+        cursor: pointer; /* Make the div look clickable */
+        position: absolute; /* Positioning relative to the parent container */
+        left: 50%; /* Position the button at the middle horizontally */
+        top: 50%; /* Position the button at the middle vertically */
+        transform: translate(-50%, -50%); /* Center the button at the middle */
+        margin-left: 18%; /* Offset the button 5% left from the center horizontally */
+        margin-top: -10%; /* Offset the button 10% lower from the center vertically */
+        transform: scale(1.0);
+      }
+
+      @keyframes heartbeat {
+        0%, 100% {
+          transform: scale(1); /* Original size */
+          filter: drop-shadow(0 0 0px rgba(0, 0, 255, 0.5)) drop-shadow(0 0 1px rgba(255, 255, 255, 0.6)); /* Subtle blue and white glow */
+        }
+        25% {
+          transform: scale(1.1); /* 20% larger */
+          filter: drop-shadow(0 0 2px rgba(0, 0, 255, 1)) drop-shadow(0 0 3px rgba(255, 255, 255, 1)); /* Stronger blue and white glow */
+        }
+        50% {
+          transform: scale(1); /* Back to normal size */
+          filter: drop-shadow(0 0 0px rgba(0, 0, 255, 0.5)) drop-shadow(0 0 1px rgba(255, 255, 255, 0.6)); /* Subtle blue and white glow */
+        }
+        75% {
+          transform: scale(1.1); /* 20% larger again */
+          filter: drop-shadow(0 0 2px rgba(0, 0, 255, 1)) drop-shadow(0 0 3px rgba(255, 255, 255, 1)); /* Stronger blue and white glow */
+        }
+      }
+      
+      .button-moon:hover {
+        animation: heartbeat 2s infinite; /* Apply the heartbeat animation with 1s duration, repeating infinitely */
+        transition: transform 0.3s ease, filter 0.3s ease; /* Optional: smooth transition */
+      }
+
+      .home-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 40px;
+      }
+      
+      .row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .frosted-button {
+        background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+        color: white; /* Text color */
+        border: 0px solid rgba(255, 255, 255, 0.3); /* Light border */
+        border-radius: 12px; /* Rounded corners */
+        padding: 12px 24px; /* Add padding to make it bigger */
+        font-size: 1rem; /* Font size */
+        font-weight: bold; /* Make the text bold */
+        text-align: center; /* Center the text */
+        cursor: pointer; /* Show pointer on hover */
+        backdrop-filter: blur(10px); /* Apply frosted glass blur effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        transition: all 0.3s ease; /* Smooth transition effect */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow around button */
+      }
+      
+      .frosted-button:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Lighten background on hover */
+        border-color: rgba(255, 255, 255, 0.5); /* Slightly increase border opacity */
+        transform: scale(1.1); /* Slightly enlarge the button */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+      }
+      
+      
+
+
+
+
+  
